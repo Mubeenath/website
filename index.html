@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet"/>
+    <link href="responsive.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/wss/fonts?families=SF+Pro,v3|SF+Pro+Icons,v3" type="text/css" media="all">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+ <header class="header">
+
+  <nav class="nav">
+    <div></div>
+    <!-- <img
+      src="img/s.png"
+      alt="Bankist logo"
+      class="nav__logo"
+      id="logo"
+      designer="Jonas"
+      data-version-number="3.0"
+    /> -->
+   
+      <a class="main-nav home" href="index.html">home</a>
+      <a class="main-nav soln" href="soln.html">Solution Engineering</a>
+      <a class="main-nav prjt" href="prjt.html">Software projects</a>
+
+      
+
+
+
+
+
+
+      <div class="menu-box m--1">
+        <ul class="nav__links">
+           <li class="nav__item">
+            <a class="nav__link" href="#section--1">Home</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--2">Profile</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--3">Experience</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--4">Education</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--5">Licenses & Certifications</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--6">Skills</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--7">Honors & Awards</a>
+          </li>
+        </ul>
+      </div>
+
+
+     
+
+
+
+      
+
+    
+
+    <div class="menu-box m--2">
+      
+      <ul class="nav__links">
+         <li class="nav__item">
+          <a class="nav__link" href="soln.html#sect--1">Solution demonstration</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="soln.html#sect--2">Solution Design document</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="soln.html#sect--3">Proof of concept (POC)</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="soln.html#sect--4">Solution selling</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="soln.html#sect--5">Architecture simplification</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="soln.html#sect--6">Webinars and blogpost</a>
+        </li>
+        
+      </ul>
+    </div>
+
+    
+    <div class="menu-box m--3">
+      
+      <ul class="nav__links">
+         <li class="nav__item">
+          <a class="nav__link" href="prjt.html#s--1"> Real -time Speech to text transcription with Otter.ai</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="prjt.html#s--2">Presence integration with PubNub</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="prjt.html#s--3">Django Web application</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="prjt.html#s--4"> Flutter application</a>
+        </li>
+        
+      </ul>
+    </div>
+
+    <button  class="button"><ion-icon name="menu-outline"class="mobile-menu"></ion-icon></button>
+
+    
+  </nav>
+
+  
+
+ 
+    
+
+  <div class="phone-menu hidden">
+    <button class="close-menu">&times;</button>
+    <ul>
+      <li><a class="mobile-a home" href="section--1">home</a></li>
+      <ul class="phone__links">
+          <li class="phone__item">
+           <a class="phone__link" href="#section--1">Home</a>
+         </li>
+         <li class="phone__item">
+           <a class="phone__link" href="#section--2">Profile</a>
+         </li>
+         <li class="phone__item">
+           <a class="phone__link" href="#section--3">Experience</a>
+         </li>
+         <li class="phone__item">
+           <a class="phone__link" href="#section--4">Education</a>
+         </li>
+         <li class="phone__item">
+           <a class="phone__link" href="#section--5">Licenses & Certifications</a>
+         </li>
+         <li class="phone__item">
+           <a class="phone__link" href="#section--6">Skills</a>
+         </li>
+         <li class="phone__item">
+           <a class="phone__link" href="#section--7">Honors & Awards</a>
+         </li>
+       </ul>
+
+
+      <li> <a class="mobile-a soln" href="soln.html">Solution Engineering</a></li>
+      <ul class="phone__links">
+          <li class="phone__item">
+           <a class="phone__link" href="soln.html#sect--1">Solution demonstration</a>
+         </li>
+         <li class="phone__item">
+           <a class="phone__link" href="soln.html#sect--2">Solution Design document</a>
+         </li>
+         <li class="phone__item">
+           <a class="phone__link" href="soln.html#sect--3">Proof of concept (POC)</a>
+         </li>
+         <li class="phone__item">
+           <a class="phone__link" href="soln.html#sect--4">Solution selling</a>
+         </li>
+         <li class="phone__item">
+           <a class="phone__link" href="soln.html#sect--5">Architecture simplification</a>
+         </li>
+         <li class="phone__item">
+           <a class="phone__link" href="soln.html#sect--6">Webinars and blogpost</a>
+         </li>
+         
+       </ul>
+
+
+
+
+
+      <li><a class="mobile-a prjt" href="prjt.html">Software projects</a></li>
+      <ul class="phone__links">
+          <li class="phone__item">
+           <a class="phone__link" href="prjt.html#s--1"> Real -time Speech to text transcription with Otter.ai</a>
+         </li>
+         <li class="phone__item">
+           <a class="phone__link" href="prjt.html#s--2">Presence integration with PubNub</a>
+         </li>
+         <li class="phone__item">
+           <a class="phone__link" href="prjt.html#s--3">Django Web application</a>
+         </li>
+         <li class="phone__item">
+           <a class="phone__link" href="prjt.html#s--4"> Flutter application</a>
+         </li>
+         
+       </ul>
+
+  </ul>
+   
+  </div>
+
+
+ </header>
+ <main>
+
+  <section class="hero-section" id="section--1">
+    <div class="herobox">
+    <div class="hero-textbox">
+        <h1 class="hero-heading">I'm Sreekanth Sreevalsam!</h1>
+        <p class="hero-para"> 
+            I possess proven management expertise in project/ program management, requirement gathering, business
+            process analysis & management, relationship management, programming, and team building & management.
+        </p>
+        <button class="hero-btn">Read more</button>
+    </div>
+    <div class="hero-imgbox">
+      <!-- <img
+      src="img/hero-img.jpg"
+      class="hero-img"
+      alt="profile-pic"
+    /> -->
+  </div>
+    </div>
+</section>
+
+    
+    <section class="profile" id="section--2">
+        <h3 class="section-title">profile</h3>
+
+        <div>
+        <img
+            src="img/profile.jpg"
+            class="pro-img"
+            alt="profile-pic"
+          /></div>
+
+
+
+
+        <div class="profile-box">
+
+             <div class="myself">
+                <h4 class="pro-title">about me</h4>
+                <p class="para">
+                    In my 9+ years’ progressive career including 7+ years in UAE (Dubai), I have attained an excellent technical & domain proficiency in varied facets of the ITES industry and more specifically in the banking and government space. I have had the opportunity of working with reputed organizations such as RingCentral, Verint Systems, AGC Networks, Pancyber information technology, Al Majarah logistics and Ticker plant infovending.
+                </p>
+            </div>
+            
+            <div class="details">
+                <h4 class="pro-title">details</h4>
+                <h5 class="detail-title">name:</h5>
+                <P class="para">Sreekanth Sreevalsam</P>
+                <h5 class="detail-title">qualification:</h5>
+                <h6 class="q-title">Macquarie Graduate School of Management</h6>
+                 <p class="para"> Master of Business Administration - MBA <br>
+                  2021 - 2022</p>
+                  <h6 class="q-title">Adi Shankara Institute of Engineering and Technology, Kalady</h6>
+                  <p class="para">Bachelor of Technology (B.Tech.), Electrical, Electronics and Communications
+                  Engineering</p>
+                <h5 class="detail-title">location:</h5>
+                <p class="para">Sydney, New South Wales, Australia</p>
+                <div class="pro-link">
+                  <a class="pro-links" href="sreekanthsau@gmail.com"><ion-icon class="pro-icon" name="logo-google"></ion-icon></a>
+                  <a class="pro-links" href="linkedin.com/in/sreekanthsreevalsam"><ion-icon class="pro-icon" name="logo-linkedin"></ion-icon></a></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- <section class="about-me"><h3 class="section-title"></h3></section> -->
+    <section class="experince" id="section--3">
+        <h3 class="section-title">my works</h3>
+        <div class="fbox">
+           
+            <div class="work">
+                <img
+                  src="img/dolby.jpg"
+                  class="work-img show-modal"
+                  data-modal="modal1"
+                  alt="work-img"
+                />
+                <div class="work-content">
+                  <p class="work-title">Senior Solutions Architect</p>
+                  <ul class="work-attributes">
+                    <li class="work-attribute">
+                        Dolby Laboratories
+                    </li>
+                    <li class="work-attribute">
+                       May 2022 - Nov 2022
+                    </li>
+                    <li class="work-attribute">
+                     <!-- <ion-icon class="work-icon" name="location-outline"></ion-icon>   Sydney, Australia -->
+                     Sydney, Australia
+                   </li>
+                  </ul>
+                </div>
+
+            </div>
+           
+            <div class="work">
+                    <img
+                      src="img/dubber.jpg"
+                      class="work-img show-modal"
+                      data-modal="modal2"
+                      alt="work-img"
+                    />
+                    <div class="work-content">
+                      <p class="work-title">Senior Enterprise Solution Architect
+                       </p>
+                      <ul class="work-attributes">
+                        <li class="work-attribute">
+                            Dubber
+                        </li>
+                        <li class="work-attribute">
+                            Nov 2019 - May 2022
+                        </li>
+                        <li class="work-attribute">
+                        <!-- <ion-icon class="work-icon" name="location-outline"></ion-icon>  Sydney, Australia -->
+                        Sydney, Australia
+                       </li>
+                      </ul>
+                    </div>
+            </div>
+
+            <div class="work">
+                        <img
+                          src="img/ring-center.jpg"
+                          class="work-img show-modal"
+                          data-modal="modal3"
+                          alt="work-img"
+                        />
+                        <div class="work-content">
+                          <p class="work-title">Senior Solutions Architect - Enterprise | Majors | Mid-Market | Channel
+                           </p>
+                          <ul class="work-attributes">
+                            <li class="work-attribute">
+                                RingCentral
+                            </li>
+                            <li class="work-attribute">
+                                Jun 2018 - Nov 2019
+                            </li>
+                            <li class="work-attribute">
+                            <!-- <ion-icon class="work-icon" name="location-outline"></ion-icon>  Sydney, Australia -->
+                            Sydney, Australia
+                           </li>
+                          </ul>
+                        </div>
+            </div>
+
+            <div class="work">
+             <img
+             src="img/agcc.jpg"
+             class="work-img show-modal"
+             data-modal="modal4"
+             alt="work-img"
+              />
+             <div class="work-content">
+              <p class="work-title">Presales Manager - Unified Communications, Contact Center and WFO
+              </p>
+              <ul class="work-attributes">
+                <li class="work-attribute">
+                 Jul 2017 - Jun 2018
+                </li>
+                <li class="work-attribute">
+                Sydney, Australia
+               </li>
+              </ul>
+             </div>
+
+            </div>
+
+
+            <div class="work">
+                <img
+                  src="img/verint.jpg"
+                  class="work-img show-modal"
+                  data-modal="modal5"
+                  alt="work-img"
+                />
+                <div class="work-content">
+                  <p class="work-title">Senior Technical Analyst
+                    </p>
+                  <ul class="work-attributes">
+                    <li class="work-attribute">
+                        Verint
+                    </li>
+                    <li class="work-attribute">
+                        Oct 2015 - Jul 2017
+                    </li>
+                    <li class="work-attribute">
+                   India
+                   </li>
+                  </ul>
+                </div>
+
+            </div>
+
+            <div class="work">
+                <img
+                  src="img/pan.jpg"
+                  class="work-img show-modal"
+                  data-modal="modal6"
+                  alt="work-img"
+                />
+                <div class="work-content">
+                  <p class="work-title">Solutions architect
+                   </p>
+                  <ul class="work-attributes">
+                    <li class="work-attribute">
+                        Pan cyber Information Technology
+                    </li>
+                    <li class="work-attribute">
+                        Jan 2010 - Sep 2015
+                    </li>
+                    <li class="work-attribute">
+                    Dubai
+                   </li>
+                  </ul>
+                </div>
+
+            </div>
+
+            <div class="work">
+                <img
+                  src="img/graphy.png"
+                  class="work-img show-modal"
+                  data-modal="modal7"
+                  alt="work-img"
+                />
+                <div class="work-content">
+                  <p class="work-title">System engineer
+                    </p>
+                  <ul class="work-attributes">
+                    <li class="work-attribute">
+                        Al Majarah Logistics
+                        
+                    </li>
+                    <li class="work-attribute">
+                        Nov 2008 - Jan 2010
+                    </li>
+                    <li class="work-attribute">
+                     Dubai
+                   </li>
+                  </ul>
+                </div>
+
+            </div>
+
+            <div class="work">
+                <img
+                  src="img/ticker.jpg"
+                  class="work-img show-modal"
+                  data-modal="modal8"
+                  alt="work-img"
+                />
+                <div class="work-content">
+                  <p class="work-title">Software engineer
+                    </p>
+                  <ul class="work-attributes">
+                    <li class="work-attribute">
+                        Ticker
+                    </li>
+                    <li class="work-attribute">
+                        Aug 2007 - Oct 2008 
+                    </li>
+                    <li class="work-attribute">
+                    India
+                    </li>
+                  </ul>
+                </div>
+
+            </div>
+              
+                
+            </div>
+     
+    </section>
+
+
+    <section class="section-ed" id="section--4">
+      <h3 class="section-title">Education</h3>
+      <div class="ed-box">
+
+        <div class="ed-box1">
+          <img
+          src="img/mbaa.png"
+          class="ed-img"
+          alt="ed-img"
+        />
+        <div class="ed-content mba-content">
+          <p class="ed-title">Macquarie Graduate School of Management</p>
+          <ul class="work-attributes">
+            <li class="work-attribute">
+              Master of Business Administration - MBA
+            </li>
+            <li class="work-attribute">
+              2021 - 2022
+            </li>
+          </ul>
+        </div>
+      </div>
+
+        <div class="ed-box2">
+          <img
+          src="img/btechi.png"
+          class="ed-img btech-img"
+          alt="ed-img"
+        />
+        <div class="ed-content">
+          <p class="ed-title">Adi Shankara Institute of Engineering and Technology, Kalady</p>
+          <ul class="work-attributes">
+            <li class="work-attribute">
+              Bachelor of Technology (B.Tech.), Electrical, Electronics and Communications
+              Engineering 
+            </li>
+           </ul>
+        </div>
+      </div>
+      </div>
+
+    </section>
+
+    
+    <section class="testimonls" id="section--5">
+      <h3 class="section-title">Licenses & Certifications</h3>
+      <div class="lc-box">
+        <div class="lc-box1">
+          <div class="lc"><img src="img/project.jpg" alt="lc-img" class="lc-img"/><div class="lc-content"><p class="lc-para"><span class="lc-heading">Project Management Professional (PMP)® </span>
+            <!-- - Project Management Institute -->
+          </p></div></div>
+          <div class="lc"><img src="img/vm-ware.jpg" alt="lc-img" class="lc-img"/><div class="lc-content"><p class="lc-para"><span class="lc-heading">VMware Certified Professional 6 – Data Center Virtualization </span>
+            <!-- - VMware -->
+          </p></div></div>
+          <div class="lc"><img src="img/itil.jpg" alt="lc-img" class="lc-img"/><div class="lc-content"><p class="lc-para"><span class="lc-heading">ITIL V3 </span>
+            <!-- - EXIN -->
+          </p></div></div>
+          <div class="lc"><img src="img/sikom.jpg" alt="lc-img" class="lc-img"/><div class="lc-content"><p class="lc-para"><span class="lc-heading">SIKOM IVR Administrator </span>
+            <!-- - Sikom Software GmbH -->
+          </p></div></div>
+          <div class="lc"><img src="img/amzone.jpg" alt="lc-img" class="lc-img"/><div class="lc-content"><p class="lc-para"><span class="lc-heading">AWS Solution Architect - Associate </span>
+            <!-- - Amazon AWS-ASA-36189 -->
+          </p></div></div>
+          <div class="lc"><img src="img/ssca.jpg" alt="lc-img" class="lc-img"/><div class="lc-content"><p class="lc-para"><span class="lc-heading">SSCA - SIP School Certified Associate </span>
+            <!-- - The SIP School 1520722442682-24745 -->
+          </p></div></div>
+        </div>
+        <div class="lc-box2">
+          <div class="lc"><img src="img/genesys.jpg" alt="lc-img" class="lc-img"/><div class="lc-content"><p class="lc-para"><span class="lc-heading">Genesys PureCloud Professional (PCP) </span>
+            <!-- - Genesys -->
+          </p></div></div>
+          <div class="lc"><img src="img/verint.jpg" alt="lc-img" class="lc-img"/><div class="lc-content"><p class="lc-para"><span class="lc-heading">Verint installation,Configuration and Management - ICM </span>
+            <!-- - Verint -->
+          </p></div></div>
+          <div class="lc"><img src="img/verint.jpg" alt="lc-img" class="lc-img"/><div class="lc-content"><p class="lc-para"><span class="lc-heading">Verint KMS/SSL Security </span>
+            <!-- - Verint -->
+          </p></div></div>
+          <div class="lc"><img src="img/avaya.jpg" alt="lc-img" class="lc-img"/><div class="lc-content"><p class="lc-para"><span class="lc-heading">Avaya Professional Design Specialist (APDS) </span>
+            <!-- -3771T - Avaya -->
+          </p></div></div>
+          <div class="lc"><img src="img/verint.jpg" alt="lc-img" class="lc-img"/><div class="lc-content"><p class="lc-para"><span class="lc-heading">Verint QM - Applications Quality Monitoring </span>
+            <!-- - Verint -->
+          </p></div></div>
+          <div class="lc"><img src="img/tabeleu.jpg" alt="lc-img" class="lc-img"/><div class="lc-content"><p class="lc-para"><span class="lc-heading">Tableau Analyst </span>
+            <!-- - Tableau -->
+          </p></div></div>
+        </div>
+      </div>
+
+      
+
+
+
+
+    </section>
+
+    <section class="skills" id="section--6">
+      <h3 class="section-title">skills</h3>
+      
+        
+       <div class="skill-box">
+        <div class="skill"><ion-icon class="skill-icon" name="globe-sharp"></ion-icon><h5 class="skill-title"> Webrtc</h5></div> 
+        <div class="skill"><ion-icon class="skill-icon" name="logo-stencil"></ion-icon><h5 class="skill-title">Flutter</h5></div>
+        <div class="skill"><ion-icon class="skill-icon" name="logo-javascript"></ion-icon><h5 class="skill-title">JavaScript</h5></div>
+        <div class="skill"><ion-icon class="skill-icon" name="laptop-outline"></ion-icon><h5 class="skill-title">IT Service Delivery</h5></div>
+        <div class="skill"><ion-icon class="skill-icon" name="layers-outline"></ion-icon><h5 class="skill-title">Solution Architecture</h5> </div>
+        <div class="skill"><ion-icon class="skill-icon" name="people-outline"></ion-icon><h5 class="skill-title">Pre-sales</h5> </div>
+        <div class="skill"><ion-icon class="skill-icon" name="documents-outline"></ion-icon><h5 class="skill-title">Project Management</h5></div>
+        <div class="skill"><ion-icon class="skill-icon" name="desktop-sharp"></ion-icon><h5 class="skill-title">Virtualization</h5> </div>
+        <div class="skill"><ion-icon class="skill-icon" name="logo-soundcloud"></ion-icon><h5 class="skill-title">Cloud Computing</h5></div>
+        <div class="skill"><ion-icon class="skill-icon" name="invert-mode-outline"></ion-icon><h5 class="skill-title">Integration</h5> </div>
+       </div>
+        
+      
+    </section>
+
+
+    <section class="section-ha" id="section--7">
+      <h3 class="section-title">Honors & Awards</h3>
+
+      <div class="ha-box">
+        <h4 class="pro-title">Distinction in Managing People - Macquarie University</h4>
+      <p class="ha-para">
+        <span class="ha-date">Apr 2022</span> <br>
+        Achieved distinction (Grade D) in my MBA unit: MMBA8070 Managing people. I was recognised for my
+        overall performance in course contribution, engagement and assignment activities. The unit elevated
+        my skills to focus on creating an organisational culture and driving it.
+      </p>
+
+      </div>
+
+
+    </section>
+
+    <!-- <section class="section-doc">
+
+      <h3 class="section-title">publications</h3>
+
+      <div class="slider">
+        <div class="slide">
+          <img
+          src="img/e1.png"
+          class="doc-img"
+         alt="work-img"
+        />
+          
+        </div>
+
+        <div class="slider">
+          <div class="slide">
+            <img
+            src="img/e2.png"
+            class="doc-img"
+           alt="work-img"
+          />
+            
+          </div>
+
+          <div class="slider">
+            <div class="slide">
+              <img
+              src="img/e3.png"
+              class="doc-img"
+             alt="work-img"
+            />
+              
+            </div>
+
+            <div class="slider">
+              <div class="slide">
+                <img
+                src="img/s4.png"
+                class="doc-img"
+               alt="work-img"
+              />
+                
+              </div>
+
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+     
+
+      </div>
+
+
+    </section> -->
+
+    <section class="section-cta">
+      <h3 class="section-title cta-title">contact me</h3>
+
+      <div class="container">
+       
+        <div class="row">
+          
+          <div class="column">
+            <form id="submit-form" action="">
+              
+              <input type="text" id="fname" name="name" placeholder="Enter your name">
+             
+              <input type="text" id="lname" name="email" placeholder="Enter valid Email ID">
+             
+              <textarea id="subject" name="message" placeholder="Enter your message " style="height:170px"></textarea>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+          
+      </div>
+
+      </div>
+  
+    </section> 
+
+    <div class="modal" id="modal1">
+    <div class="modal-content" >
+      <button class="close-modal">&times;</button>
+      <div class="m-hbox"><img
+        src="img/dolby.jpg"
+        class="m-img"
+        alt="ed-img"
+      />
+
+    <h1>Senior Solutions Architect </h1>
+      <span class="m-span">Dolby Laboratories</span>
+      </div>
+      <p>
+        <!-- May 2022 - Nov 2022 (7 months) -->
+        <ul>
+          <li>As a solution architect for APAC, I work with high-value customers to architect the integration of Dolby's
+            CPaaS platform into their services.</li>
+        <li>I assist the sales team in positioning Dolby as a significant solution provider during the sales cycle.
+          I manage the proof-of-concept process during the evaluation and selection process and ensure that
+          Dolby is the preferred vendor.</li>
+        <li>Enhancing developer experience is another avenue that I pursue. I create integrations with globally
+          renowned API partners to showcase the value Dolby and the partner can bring to the developer
+          ecosystem. It helps to attract developer and customer attention to the Dolby.io platform.</li>
+         <li>Furthermore, I work with marketing, documentation and developer relations teams to co-create content
+          in videos, blog-post, sample app documents and more.</li>
+        <li>I develop sample and demonstration applications on video conferencing and WebRTC streaming
+          technologies using Flutter and Javascript utilising Dolby.io SDKs.</li>
+       <li> In addition, I provide continuous feedback to engineering teams to ensure that the platform evolves with
+        a focus on customer needs.</li>
+        
+        </ul>
+      </p>
+    </div>
+    </div>
+
+    <div class="modal" id="modal2">
+      <div class="modal-content" >
+
+        <button class="close-modal">&times;</button>
+        <div class="m-hbox"><img
+          src="img/dubber.jpg"
+          class="m-img"
+          alt="ed-img"
+        />
+  
+      <h1> Senior Enterprise Solution Architect</h1>
+        <span class="m-span">Dubber</span>
+        </div>
+
+
+       
+        <p>
+          
+          <!-- Nov 2019 - May 2022 (2 years 7 months) -->
+          As a solution architect managing the APAC region for Dubber, I focused on engaging with telco service
+          providers and positioning Dubber Call-recording and Voice AI Solutions across their product offerings.
+          In addition, I was responsible for onboarding and providing solutions consulting of Dubber solutions
+          across Webex Calling and Cisco's other UC solutions for Cisco and Cisco's channel partners across
+          APAC. </p>
+         <p> I led the Microsoft solution architecting practice for APAC by helping vision and define the integration of
+          Microsoft Teams and Dubber with telco and managed service partners of Microsoft from ideation to an
+          actual product stage.</p>
+         <p> I was responsible for solution training program design and delivery for APAC partners and customers.
+          Furthermore, I mentored and upskilled sales and associate solution engineers on their platform learning
+          journey.</p>
+          <p>My knowledge of Data analytics on Microsoft PowerBi and Tableau was upskilled in this position,
+            especially around Speech-to-text analytics. I also integrated Microsoft Azure AI from Dubber to
+            showcase the insights from speech-to-text transcription for Enterprise demonstrations.</p>
+         <p> Furthermore, I led the global solutions engineering (SE) operations by implementing and enabling the
+          Loopio platform for the international SE team. It has refined the SE process by responding efficiently
+          and quickly to RFPs, RFQs and Security questionnaires. In addition, it has also resulted in reducing
+          resource hours and the sales cycle.</p>
+         <p> By combing Confluence and Loopio, I created a knowledge base and solution design repository for the
+          SE and Enterprise sales team for content sharing.
+          Working closely with sales and marketing teams, I designed and led the global technology webinars to
+          attract telcos, managed service providers, partners and customers and evangelised the platform.
+          
+        </p>
+      </div>
+      </div>
+
+      
+    <div class="modal" id="modal3">
+      <div class="modal-content" >
+
+          <button class="close-modal">&times;</button>
+
+          <div class="m-hbox"><img
+            src="img/ring-center.jpg"
+            class="m-img"
+            alt="ed-img"
+          />
+    
+        <h1>Senior Solutions Architect - Enterprise | Majors | Mid-Market | Channel</h1>
+          <span class="m-span">RingCentral</span>
+          </div>
+         
+          <p>
+            <!-- Jun 2018 - Nov 2019 (1 year 6 months) -->
+            <ul>
+
+            <li>Responsible for developing the Pre-sales practice in the Australia region</li>
+            <li>Created the highly successful POC process which lead to conversion of 80% POC users to actual
+              RingCentral customers.</li>
+            <li>Enabling and educate the sales and channel team to transact with Enterprise customers</li>
+            <li>Maintain and nurture relationship with key technology partners like Polycom and Nice InContact</li>
+            <li>Defined the RingCentral solutions engineering playbook for the APAC region</li>
+            <li>Lead channel champion events, lunch and learn, and webinar sessions for channel partners and
+              prospective customers from a technical perspective</li>
+           <li> Participate in enhancing the RCV (RingCentral Video) by providing constructive feedback and market
+            expectations from a technical and pre-sales front.</li>
+            <li>Representation at conferences, industry, and sales events when requested by the department
+              manager</li>
+            <li>RingCentral Contact Centre SME for the APAC region and was responsible for conversion of 90% CC
+              opportunities to customers.</li>
+           <li> Assist in the on-boarding of new hire SE's and set them up for success</li>
+           <li>Provide direct support for the technical fulfillment of RFI’s, RFQ’s and RFP’s in their assigned territory</li>
+            <li>Manage all customer feature requests including documentation of customer requirements,
+              prioritization of all customer requests within each account, and driving the development of key
+              features with the product team</li>
+            </ul>
+           
+          </p>
+        </div>
+        </div>
+
+        <div class="modal" id="modal4">
+          <div class="modal-content" >
+    
+            <button class="close-modal">&times;</button>
+            <div class="m-hbox">
+              <img
+                src="img/agcc.jpg"
+                class="m-img"
+                alt="ed-img"
+              />
+      
+          <h1>Presales Manager - Unified Communications, Contact Center and WFO</h1>
+          <span class="m-span">Black Box</span>
+            
+            </div>
+            
+            <p>
+              
+              <!-- Jul 2017 - Jun 2018 (1 year) -->
+             <ul>
+              <li>As a pre-sales manager I was responsible for understanding the unified communications and contact
+                center requirements of the customer and present the best possible solution .</li>
+             <li> As a product champion in Verint WFO and Genesys PureCloud solutions I was also responsible in
+              assisting AGC navigate the way forward with that vendor, ensuring that we were positioned correctly .</li>
+              <li>Ensuring that there is a certification plan in place for pre-sales and sales, so that we are always able to
+                get access to the right pricing and have the right capability to address their spread of technology to our
+                customers and prospects. Being a point of escalation for special bids, should it be needed.</li>
+              <li>Being a liaison point between AGC and vendor technical personnel. Ensuring a comprehensive cross-training program is in place across pre-sales, sales and service delivery, to ensure that we are able to
+                meet the demands of the sales team for all opportunities, regardless of geography or technology.</li>
+             <li> In consultation with finance, determine the purchasing path that gives the most complete advantage to
+              AGC and its customers.</li>
+             <li>Provide support to the internal technical team, when specialist knowledge is required.</li>
+             </ul>
+              
+              
+            </p>
+          </div>
+          </div>
+
+          <div class="modal" id="modal5">
+            <div class="modal-content" >
+      
+              <button class="close-modal">&times;</button>
+              <div class="m-hbox"><img
+                src="img/verint.jpg"
+                class="m-img"
+                alt="ed-img"
+              />
+        
+            <h1>Senior Technical Analyst</h1>
+              <span class="m-span">Verint</span>
+              </div>
+              
+              
+              <p>
+                <!-- Oct 2015 - Jul 2017 (1 year 10 months) -->
+               <ul>
+                <li>I was responsible for providing tier 2 technical support for all product development projects across
+                  the APAC regions as part of a team. My accountabilities included issue/incident management, onsite
+                  customer trouble-shooting, pre-sales, design and architecture, maintenance/migration support, training& development and stakeholder management.
+                </li>
+                <li>Project management activities included pre-sales support, solution design, architecture and provision of
+                  technical support during implementation. Also, ensuring all projects are completed on-time and in line
+                  with stakeholder expectations.</li>
+               <li> Some examples of technical excellence –
+                Providing advanced L2 and L3 technical support for EIS systems comprising of recorder speech
+                analytics, security, encryption, voice bio-metrics and QM applications.</li>
+               <li> I was also responsible for knowledge transfer activities to T1 and field engineers.</li>
+                  
+               </ul>
+
+              </p>
+            </div>
+            </div>
+
+            <div class="modal" id="modal6">
+              <div class="modal-content" >
+        
+                <button class="close-modal">&times;</button>
+                <div class="m-hbox"><img
+                  src="img/pan.jpg"
+                  class="m-img"
+                  alt="ed-img"
+                />
+          
+              <h1>Solutions architect</h1>
+                <span class="m-span">Pan cyber Information Technology</span>
+                </div>
+                
+               
+                <p>
+                  <!-- Jan 2010 - Sep 2015 (5 years 9 months) -->
+                  <ul>
+                    <li>As solutions architect, engaged in a typical project management life-cycle right from gathering
+                      requirements to solution design, development and delivery. My contributions/initiatives included
+                      creation/revision of project policies and processes, cost optimisation and process improvements,
+                      defining of the project metrics and milestones and building of a strong review and MIS systems.</li>
+                 <li> Projects managed included telephone system projects – call recording, IVR implementation and custom
+                  software development, call billing, in-house data center operations and more.</li>
+                  <li>Served as solution architect for Verint V11 solutions and Enghouse,Aspect,Sikom and Nixxis IVR
+                    solutions. software architect for Dialguard (call accounting software), Incontact CTI (CTI software) and
+                    software consultant for Incontact SMS application. Engaged in data center, PABX network and firewall
+                    management activities.</li>
+                  </ul>
+                  
+
+               
+                </p>
+              </div>
+              </div>
+
+              <div class="modal" id="modal7">
+                <div class="modal-content" >
+          
+                  <button class="close-modal">&times;</button>
+                  <div class="m-hbox">
+                    <!-- <img
+                    src="img/pan.jpg"
+                    class="m-img"
+                    alt="ed-img"
+                  /> -->
+            
+                <h1>System engineer</h1>
+                  <span class="m-span">Al Majarah Logistics</span>
+                  </div>
+                 
+                  <p>
+                    <!-- Nov 2008 - Jan 2010 (1 year 3 months) -->
+                    I was managing the Data Center operations and in-house application support activities in terms of
+                    providing IT, networking, software and customer support.
+                  
+      
+                  </p>
+                </div>
+                </div>
+
+
+                <div class="modal" id="modal8">
+                  <div class="modal-content" >
+            
+                    <button class="close-modal">&times;</button>
+                    <div class="m-hbox"><img
+                      src="img/ticker.jpg"
+                      class="m-img"
+                      alt="ed-img"
+                    />
+              
+                  <h1>Software engineer </h1>
+                    <span class="m-span">Ticker</span>
+                    </div>
+                    
+                    <p>
+                      Aug 2007 - Oct 2008 (1 year 3 months)
+                      This was the start of my career and I had joined the organisation as part of campus recruitment. My key
+                      contributions here were - designed and developed GUI for the MarketView terminal application, coding
+                      and implementation of different software modules including documentation, writing and maintaining
+                      program codes in line with system requirements, system design and technical specifications and more.
+                      
+
+                    </p>
+                  </div>
+                  </div>
+  
+
+
+
+   
+
+
+ </main>
+ <footer></footer>
+ <script src="script.js"></script>  
+</body>
+</html>

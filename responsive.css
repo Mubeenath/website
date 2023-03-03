@@ -1,0 +1,304 @@
+/**************************/
+/* BELOW 1344px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 84em) {
+    .section-title
+{
+  font-size: 4rem;
+  margin-bottom: 4rem;
+ 
+}
+}
+
+
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+
+@media (max-width: 75em) {
+    html {
+        /* 9px / 16px  */
+        font-size: 56.25%;
+      }
+  
+
+
+}
+
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (max-width: 59em) {
+   html {
+        /* 8px / 16px = 0.5 = 50% */
+        font-size: 50%;
+      }
+
+      .fbox {
+       column-gap: 3.4rem; 
+      
+      }
+
+      .ed-box
+      {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 4.4rem;
+        margin: 0 8rem;
+        
+      }
+
+     .main-nav
+     {
+      display: none;
+
+     }
+
+     .mobile-menu {
+      display: block;
+  }
+
+
+
+
+      
+
+
+
+}
+
+
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+.fbox
+{
+
+grid-template-columns: repeat(1,1fr);
+
+}
+
+.ed-box
+      {
+       
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 8.4rem;
+        margin: 0 18rem;
+       
+        
+      }
+
+.ed-img
+{
+  width: 360px;
+  height: 300px;
+  padding: 2.2rem 2.8rem 0 2.8rem;
+}
+
+.ed-content
+{
+  padding: 0 2.8rem 2.8rem 2.8rem;
+ text-align: center;
+} 
+
+
+.btech-img
+{
+  width: 200px;
+  height: 200px;
+  margin-bottom: 4.8rem;
+  margin-top: 3rem;
+}
+
+.lc-box
+{
+  grid-template-columns: repeat(1,1fr);
+  row-gap: 2rem;
+  margin: 0 16rem;
+ 
+}
+
+.lc-box1
+{
+ 
+  gap: 3.5rem;
+}
+
+.lc-box2
+{
+  
+  gap: 3.5rem;
+}
+
+.ha-box
+{
+ 
+  margin: 0 8rem;
+  padding: 3rem;
+
+}
+
+.skill-box
+{
+ 
+  grid-template-columns: repeat(4,1fr);
+  /* column-gap: 4rem; */
+  row-gap: 6rem;
+ 
+}
+
+
+.profile-box
+{
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 3rem;
+  /* justify-content: center; */
+  /* justify-items: center; */
+  align-content: center;
+ 
+
+}
+
+
+
+
+
+
+
+
+}
+
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+    html {
+        /* 8px / 16px = 0.5 = 50% */
+        font-size: 45%;
+      }
+
+
+      .section-title
+      {
+        font-size: 3rem;
+        margin-bottom: 3rem;
+       
+      }
+
+
+
+
+      .work-img {
+        width: 150px;
+        height: 150px;
+        cursor: pointer;
+      
+      }
+
+      .ed-box
+      {
+       
+       
+        margin: 0 4rem;
+       
+        
+      }
+
+.ed-img
+{
+  width: 260px;
+  height: 200px;
+  padding: 1.2rem 1.4rem 0 1.4rem;
+}
+
+.ed-content
+{
+  padding: 0 1.4rem 1.4rem 1.4rem;
+ text-align: center;
+} 
+
+
+.btech-img
+{
+  width: 150px;
+  height: 150px;
+  margin-bottom: 2.8rem;
+  margin-top: 2rem;
+}
+
+
+.lc-box
+{
+  grid-template-columns: repeat(1,1fr);
+  row-gap: 2.5rem;
+  margin: 0 2rem;
+ 
+}
+
+.lc-box1
+{
+ 
+  gap: 2.5rem;
+}
+
+.lc-box2
+{
+  
+  gap: 2.5rem;
+}
+
+
+.ha-box
+{
+ 
+  margin: 0 2rem;
+  padding: 3rem;
+
+}
+
+
+.skill-box
+{
+ 
+  grid-template-columns: repeat(3,1fr);
+  column-gap: 1rem;
+  row-gap: 3rem;
+ 
+}
+
+.column {
+  /* float: left; */
+  width: 100%;
+  /* margin-top: 6px;
+  padding: 20px; */
+}
+
+/* .row{
+  display: flex;
+  justify-content: center;
+  
+} */
+
+
+
+
+
+
+}
+
+
+
+/* - Font sizes (px) 
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
